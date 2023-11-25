@@ -1,22 +1,25 @@
-let nome = ""
-let xp = 5000
+let nomeDoHeroi = "Maria"
+let xpDoHeroi = 5000
 
-if (xp <= 1000){
-    console.log("ferro")
-} else if (1001 || 2000){
-    console.log("bronze")
-} else if (2001 || 5000){
-    console.log("prata")
-} else if (6001 || 7000){
-    console.log("ouro")
-} else if (7001 || 8000){
-    console.log("platina")
-} else if (8001 || 9000){
-    console.log("ascendente")
-} else if (9001 || 1000){
-    console.log("imortal")
-} else if (xp >= 10001){
-    console.log("radiante")
+// Estrutura de decisão para determinar o nível do herói com base na XP
+let nivel = "" // Variável para armazenar o nível do herói
+
+if (xpDoHeroi < 1000){
+    console.log(nivel = "ferro")
+} else if (xpDoHeroi >= 1001 && xpDoHeroi <= 2000){
+    console.log(nivel = "bronze")
+} else if (xpDoHeroi >= 2001 && xpDoHeroi <= 5000){
+    console.log(nivel = "prata")
+} else if (xpDoHeroi >= 6001 && xpDoHeroi <= 7001){
+    console.log(nivel = "ouro")
+} else if (xpDoHeroi >= 7001 && xpDoHeroi <= 8000){
+    console.log(nivel = "platina")
+} else if (xpDoHeroi >= 8001 && xpDoHeroi <= 9000){
+    console.log(nivel = "ascendente")
+} else if (xpDoHeroi >= 9001 && xpDoHeroi <= 10000){
+    console.log(nivel = "imortal")
 } else {
-    console.log("O herói de nome " + nome + " está no nível " + xp)
+    nivel = "radiante"
 }
+// Exibindo a mensagem com o nível do herói
+console.log("O herói de nome " + nomeDoHeroi + " está no nível de " + nivel)
